@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xflyme.go4.view.NoAutoScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noAutoScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ciyun_actionbar"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:background="@color/main_color"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:id="@+id/rl_top_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:minHeight="56dip"
+                android:minWidth="56dip"
+                android:onClick="onClick" >
+
+                <TextView
+                    android:id="@+id/btn_title_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginStart="15dip"
+                    android:onClick="onClick"
+                    android:text="@string/cancel"
+                    android:textColor="@drawable/title_textview_selector" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_title_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:paddingLeft="40dip"
+                android:paddingRight="40dip"
+                android:singleLine="true"
+                android:text="@string/new_activity"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_top_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:minHeight="56dip"
+                android:minWidth="56dip" >
+
+                <TextView
+                    android:id="@+id/btn_title_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dip"
+                    android:layout_marginRight="15dip"
+                    android:maxHeight="40dip"
+                    android:onClick="onClick"
+                    android:text="@string/post"
+                    android:textColor="@drawable/title_textview_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_add_category"
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginStart="15dip"
+                android:hint="Select Categories"
+                android:textColor="#5f5f5f"
+                android:textColorHint="#a2a2a2" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/common_arrow_bottom" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_add_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:clickable="true"
+            android:onClick="onClick" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="#dddddd" />
+
+            <com.xflyme.go4.view.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="37dip"
+                android:layout_height="37dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginStart="15dip"
+                android:src="@drawable/ic_launcher" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginStart="15dip"
+                android:layout_toEndOf="@id/iv_head"
+                android:layout_toRightOf="@id/iv_head"
+                android:background="@color/white"
+                android:hint="Subject Title"
+                android:singleLine="true"
+                android:textColor="#5f5f5f"
+                android:textColorHint="#a2a2a2" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_add_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dip"
+            android:paddingTop="15dip" >
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginStart="15dip"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="What you want to say..."
+                android:minHeight="75dip"
+                android:textColor="#5f5f5f"
+                android:textColorHint="#a2a2a2" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="75dip"
+                android:layout_height="75dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginStart="15dip"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="15dip"
+                android:contentDescription="@null"
+                android:src="@drawable/selector_btn_choose_image" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginTop="15dip"
+                android:background="#dddddd" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.xflyme.go4.view.NoAutoScrollView>

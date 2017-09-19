@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ciyun_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="56dip"
+        android:background="@color/main_color"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/text_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:text="@string/select_property"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_select_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_btn_bottom"
+        android:onClick="onClick"
+        android:text="@string/facility_next"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/lv_select_property"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_above="@id/btn_select_next"
+        android:layout_below="@id/ciyun_actionbar"
+        android:layout_marginLeft="15dip"
+        android:listSelector="@null"
+        android:layout_marginRight="15dip"
+        android:divider="#dedddd"
+        android:dividerHeight="0.5dip"
+        android:scrollbars="none" />
+
+</RelativeLayout>

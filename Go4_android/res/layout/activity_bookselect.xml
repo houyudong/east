@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/book_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/book_year"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_below="@id/book_title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_bookselect_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/common_arrow_bottom"
+            android:drawableEnd="@drawable/common_arrow_bottom"
+            android:padding="5dip"
+            android:onClick="onClick"
+            android:textColor="#595a59" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/book_year"
+        android:background="#f0efef" />
+
+    <com.xflyme.go4.view.NoAutoScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_bookselect_bottom"
+        android:layout_below="@id/view_line"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.xflyme.go4.view.NoSlideGridView
+                android:id="@+id/grid_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/grid_background"
+                android:numColumns="7" />
+
+            <com.xflyme.go4.view.NoSlideGridView
+                android:id="@+id/grid_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/grid_background"
+                android:numColumns="7"
+                android:paddingBottom="10dip" />
+
+            <com.xflyme.go4.view.NoSlideGridView
+                android:id="@+id/grid_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4a4a4b"
+                android:horizontalSpacing="8dip"
+                android:listSelector="@drawable/grid_background"
+                android:numColumns="3"
+                android:padding="15dip"
+                android:verticalSpacing="8dip" />
+        </LinearLayout>
+    </com.xflyme.go4.view.NoAutoScrollView>
+
+    <Button
+        android:id="@+id/btn_bookselect_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_btn_bottom"
+        android:onClick="onClick"
+        android:text="@string/facility_next"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

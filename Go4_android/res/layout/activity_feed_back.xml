@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout" />
+
+    <ListView
+        android:id="@+id/lv_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/transparent"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:scrollbars="none"
+        android:dividerHeight="20dip"
+        android:listSelector="@color/white" />
+    <!-- android:transcriptMode="alwaysScroll" -->
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginStart="15dip"
+            android:layout_marginEnd="5dip"
+            android:textColor="#696867"
+            android:layout_weight="10"
+            android:background="@drawable/input_round_bg"
+            android:imeOptions="actionSend"
+            android:maxHeight="250dip"
+            android:maxLength="500"
+            android:padding="8dip" />
+
+        <Button
+            android:id="@+id/btn_feedback"
+            android:layout_width="wrap_content"
+            android:text="@string/feed_back_send"
+            android:background="@null"
+            android:layout_height="40dip"
+            android:padding="5dip"
+            android:onClick="onClick"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:id="@+id/sc_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <TextView
+                android:id="@+id/tv_noticedetail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="The Florida"
+                android:textColor="#555656"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:paddingBottom="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="17dip"
+                    android:layout_height="17dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/bg_team_clock" />
+
+                <TextView
+                    android:id="@+id/tv_noticedetail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginStart="5dip"
+                    android:text="9am-6pm"
+                    android:textColor="#726d75" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/bg_item_noticeboard_check" />
+
+                <TextView
+                    android:id="@+id/tv_noticedetail_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:text="300"
+                    android:textColor="#726d75" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_noticedetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_about_pic" />
+
+            <TextView
+                android:id="@+id/tv_noticedetail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+                android:text="TextView"
+                android:textColor="#7b797a"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:id="@+id/view_top"
+                android:visibility="gone"
+                android:background="#bbbbbb" />
+
+            <com.xflyme.go4.view.NoSlideListView
+                android:id="@+id/lv_vote"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:divider="#bbbbbb"
+                android:dividerHeight="1px"
+                android:listSelector="@drawable/selector_lv_vote" />
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/view_bottom"
+                android:visibility="gone"
+                android:layout_height="1px"
+                android:background="#bbbbbb" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_vote"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/selector_btn_bottom"
+        android:onClick="onClick"
+        android:text="@string/vote"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

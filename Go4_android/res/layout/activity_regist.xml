@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/regist_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_regist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginStart="15dip"
+        android:layout_weight="18"
+        android:gravity="start|center"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/regist_name" />
+
+        <EditText
+            android:id="@+id/et_regist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_name"
+            android:layout_toRightOf="@id/iv_name"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_name"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_property"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_property"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/regist_property" />
+
+        <EditText
+            android:id="@+id/et_regist_property"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_property"
+            android:layout_toRightOf="@id/iv_property"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_property_name"
+            android:inputType="textPassword"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_unit"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/regist_unit" />
+
+        <EditText
+            android:id="@+id/et_regist_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_unit"
+            android:layout_toRightOf="@id/iv_unit"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_unit"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_relation"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/login_password" />
+
+        <EditText
+            android:id="@+id/et_regist_relation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_relation"
+            android:layout_toRightOf="@id/iv_relation"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_relation"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_ic"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/regist_ic" />
+
+        <EditText
+            android:id="@+id/et_regist_ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_ic"
+            android:layout_toRightOf="@id/iv_ic"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_ic"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/login_email" />
+
+        <EditText
+            android:id="@+id/et_regist_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_email"
+            android:layout_toRightOf="@id/iv_email"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/regist_email"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_contact"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/regist_contact" />
+
+        <EditText
+            android:id="@+id/et_regist_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_contact"
+            android:layout_toRightOf="@id/iv_contact"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_contact"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/login_password" />
+
+        <EditText
+            android:id="@+id/et_regist_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_password"
+            android:layout_toRightOf="@id/iv_password"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/login_password" />
+
+        <EditText
+            android:id="@+id/et_regist_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_repeat"
+            android:layout_toRightOf="@id/iv_repeat"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_repeat"
+            android:inputType="textPassword"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_regist_verification"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="11" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/translucent" />
+
+        <ImageView
+            android:id="@+id/iv_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/regist_verification" />
+
+        <EditText
+            android:id="@+id/et_regist_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/iv_verification"
+            android:layout_toRightOf="@id/iv_verification"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/regist_verification"
+            android:textColor="@color/translucent"
+            android:textColorHint="@color/translucent" >
+        </EditText>
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_btn_login"
+            android:gravity="center"
+            android:text="@string/regist_regist"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_sign"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginEnd="15dip"
+        android:layout_weight="12.5"
+        android:gravity="end" >
+
+        <TextView
+            android:id="@+id/tv_login_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dip"
+            android:layout_marginRight="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/regist_hint"
+            android:textColor="@color/translucent" />
+
+        <TextView
+            android:id="@+id/tv_login_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:text="@string/regist_sign_in"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

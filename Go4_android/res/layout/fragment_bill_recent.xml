@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/recent_bill_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rl_recent_bill_bottom"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_recent_bill_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_color"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <View
+            android:id="@+id/view_item_bill_select"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_item_bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginStart="5dip"
+            android:layout_toEndOf="@id/view_item_bill_select"
+            android:layout_toRightOf="@id/view_item_bill_select"
+            android:text="Select All"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_bill_pay"
+            android:padding="5dip"
+            android:text="Pay Now"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:id="@+id/tv_recent_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/btn_select_all"
+            android:layout_toStartOf="@id/btn_select_all"
+            android:text="Total:S$100"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

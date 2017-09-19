@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ciyun_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="56dip"
+        android:background="@color/main_color"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:minHeight="56dip"
+            android:minWidth="56dip"
+            android:onClick="onClick" >
+
+            <TextView
+                android:id="@+id/btn_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dip"
+                android:layout_marginStart="15dip"
+                android:background="@drawable/selector_title_back"
+                android:textColor="@drawable/title_textview_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:minHeight="56dip"
+            android:minWidth="56dip" >
+
+            <TextView
+                android:id="@+id/btn_title_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dip"
+                android:layout_marginRight="15dip"
+                android:maxHeight="40dip"
+                android:textColor="@drawable/title_textview_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/team_member_list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

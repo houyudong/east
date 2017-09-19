@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.manuelpeinado.multichoiceadapter.view.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="98dip"
+    android:background="@drawable/selector_item_noticeboard"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="98dip"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <CheckBox
+            android:id="@android:id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/selector_checkbox"
+            android:focusable="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="#d9d7d8" />
+
+        <TextView
+            android:id="@+id/tv_item_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginStart="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_toEndOf="@android:id/checkbox"
+            android:layout_toRightOf="@android:id/checkbox"
+            android:text="Lorem ipsum door sit amet"
+            android:textColor="#5c5c5c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginStart="10dip"
+            android:layout_toEndOf="@android:id/checkbox"
+            android:layout_toRightOf="@android:id/checkbox"
+            android:contentDescription="@null"
+            android:src="@drawable/bg_team_clock" />
+
+        <TextView
+            android:id="@+id/tv_item_activity_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginStart="5dip"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="9am-6pm"
+            android:textColor="#726d75" />
+
+        <ImageView
+            android:id="@+id/iv_item_activity_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/common_arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_item_activity_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_activity_title"
+            android:layout_alignStart="@+id/tv_item_activity_title"
+            android:layout_below="@+id/tv_item_activity_title"
+            android:layout_marginEnd="30dip"
+            android:layout_marginRight="30dip"
+            android:layout_marginTop="3dip"
+            android:layout_toLeftOf="@id/iv_item_activity_right"
+            android:layout_toStartOf="@id/iv_item_activity_right"
+            android:lineSpacingExtra="5dip"
+            android:lines="2"
+            android:text="hey我真的好想你 现在窗外面又开始下着雨 眼睛干干的有想哭的心情 不知道你现在到底在哪里 "
+            android:textColor="#bebdbe"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dip"
+            android:layout_toEndOf="@+id/tv_item_activity_time"
+            android:layout_toRightOf="@+id/tv_item_activity_time"
+            android:src="@drawable/bg_item_noticeboard_check" />
+
+        <TextView
+            android:id="@+id/tv_item_activity_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_activity_time"
+            android:layout_alignBottom="@+id/tv_item_activity_time"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="300"
+            android:textColor="#726d75" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dip"
+            android:layout_toEndOf="@+id/tv_item_activity_view"
+            android:layout_toRightOf="@+id/tv_item_activity_view"
+            android:src="@drawable/bg_item_reply" />
+
+        <TextView
+            android:id="@+id/tv_item_activity_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_activity_time"
+            android:layout_alignBottom="@+id/tv_item_activity_time"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="300"
+            android:textColor="#726d75" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="3dip"
+            android:layout_toEndOf="@+id/tv_item_activity_reply"
+            android:layout_toRightOf="@+id/tv_item_activity_reply"
+            android:src="@drawable/bg_item_love" />
+
+        <TextView
+            android:id="@+id/tv_item_activity_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_item_activity_time"
+            android:layout_alignBottom="@+id/tv_item_activity_time"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="300"
+            android:textColor="#726d75" />
+    </RelativeLayout>
+
+</com.manuelpeinado.multichoiceadapter.view.CheckableLinearLayout>

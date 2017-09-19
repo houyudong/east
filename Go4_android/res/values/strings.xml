@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIGN</string>
+    <string name="select_property">Select Property</string>
+    <string name="comments_hint">Write a comment</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_activity">NEW ACTIVITY</string>
+    <string name="post">Post</string>
+    <string name="email_format_err">邮箱格式错误</string>
+    <string name="not_record_future">不能录入今天以后的数据</string>
+    <string name="chgpwd_success">Change password success !</string>
+    <string name="chgpwd_fail">Change password fail !</string>
+    <string name="select_month">Select month</string>
+    <string name="loading">loading…</string>
+    <string name="wait">loading…</string>
+    <string name="memory_card_not_exist">SD卡不存在</string>
+    <string name="guide_skip">skip</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_forgot_password">Forgot Password</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_forgot_password">Forgot password</string>
+    <string name="forgot_hint">Password will send to your email shortly</string>
+    <string name="login_login">LOG IN</string>
+    <string name="login_logout">Sign Out</string>
+    <string name="forgot_forgot">Get back your password</string>
+    <string name="login_sign_up">Sign Up</string>
+    <string name="login_sign_up_hint">Don\'t have an account?</string>
+
+    <!-- 注册 -->
+    <string name="regist_title">Sign Up</string>
+    <string name="regist_name">Name</string>
+    <string name="regist_property_name">Property</string>
+    <string name="regist_unit">Unit No.</string>
+    <string name="regist_relation">Relation</string>
+    <string name="regist_ic">IC/FIN No.</string>
+    <string name="regist_email">Email</string>
+    <string name="regist_contact">Contact No.</string>
+    <string name="regist_password">Password</string>
+    <string name="regist_repeat">Repeat Password</string>
+    <string name="regist_verification">Verification Code</string>
+    <string name="regist_hint">Already have an account?</string>
+    <string name="regist_regist">Join</string>
+    <string name="regist_sign_in">Sign In</string>
+
+    <!-- 首页 -->
+    <string name="main_home">Home</string>
+    <string name="main_feed">Feed Back</string>
+    <string name="main_booking">My Booking</string>
+    <string name="main_me">Me</string>
+    <string name="main_activity">Forum</string>
+    <string name="main_manager">Contact</string>
+    <string name="main_bill">Fees</string>
+    <string name="main_book">Bookings</string>
+    <string name="main_notice">NOTICES</string>
+    <string name="main_more">More</string>
+    <string name="main_coming">(Coming Soon)</string>
+
+    <!-- 反馈 -->
+    <string name="feed_back_send">Send</string>
+    <string name="feed_back_title">Feed Back</string>
+
+    <!-- managerment -->
+    <string name="manager_title">contact</string>
+    <string name="mybooking_title">My Booking</string>
+    <string name="manager_team">MC OFFICE</string>
+    <string name="manager_about">GUARDHOUSE</string>
+    <string name="manager_about_cando">About Cando</string>
+    <string name="manager_about_managerment">About Managerment</string>
+
+    <!-- facility -->
+    <string name="facility_itle">Booking</string>
+    <string name="facility_next">Next</string>
+    <string name="vote">Vote</string>
+    <string name="facility_confirm">Confirm Booking</string>
+    <string name="book_confirm_name">Name</string>
+    <string name="book_confirm_name_hint">Your Name</string>
+    <string name="book_confirm_unit">Unit NO.</string>
+    <string name="book_confirm_unit_hint">Unit NO.</string>
+    <string name="book_confirm_property">Property_Name</string>
+    <string name="book_confirm_property_hint">Your Property</string>
+    <string name="book_confirm_phone">Contact NO.</string>
+    <string name="book_confirm_phone_hint">Your NO.</string>
+    <string name="book_confirm_facility">Facility</string>
+    <string name="book_confirm_facility_hint">Facility</string>
+    <string name="book_confirm_date">Date</string>
+    <string name="book_confirm_date_hint">Date</string>
+    <string name="book_confirm_time">Time</string>
+    <string name="book_confirm_time_hint">Time</string>
+    <string name="book_confirm_fee">Fee</string>
+    <string name="book_confirm_fee_hint">$100</string>
+    <string name="book_confirm_contact">Contact NO.</string>
+    <string name="book_confirm_contact_hint">13198980817</string>
+    <string name="book_confirm_update">Update</string>
+    <string name="book_confirm">Confirm</string>
+    <string name="book_invite">Invite Friend</string>
+    <string name="book_edit">Cancel Booking</string>
+
+    <!-- bill -->
+    <string name="bill_itle">Bills</string>
+    <string name="bill_detail_itle">Bill Detail</string>
+    <string name="bill_recent">Outstanding bills</string>
+    <string name="bill_history">Billing History</string>
+    <string name="fee_maintenance">Maintenance Fee</string>
+    <string name="fee_parking">Parking Fee</string>
+    <string name="maintenance_title">Maintenance_Fund</string>
+    <string name="sinking_title">Sinking Fund</string>
+    <string name="gst_title">GST@</string>
+
+    <!-- Notice Board -->
+    <string name="noticeboard_title">NOTICES</string>
+    <string name="noticeboard_recent">Recent Notice</string>
+    <string name="noticeboard_post">Post Notice</string>
+
+    <!-- Activities -->
+    <string name="activities_title">Forum</string>
+
+    <string name="category_is_null">Please select category</string>
+    <string name="title_is_null">Please input title</string>
+    <string name="content_is_null">Please input content</string>
+    
+    <string name="myfavorites_title">My Favorites</string>
+    <string name="comments_title">Comments</string>
+    <string name="myactivities_title">My Activities</string>
+    <string name="activities_baby">EVENT</string>
+    <string name="activities_education">EDUCATION</string>
+    <string name="activities_resale">RESALE</string>
+    <string name="activities_exercuse">EXERCISE</string>
+    <string name="detail_fail">Get activity result fail!</string>
+
+    <!-- Me -->
+    <string name="me_title">Me</string>
+    <string name="me_favorites">My Favorites</string>
+    <string name="me_activities">My Activities</string>
+    <string name="me_property">Add Property</string>
+    <string name="me_invite">Invite User</string>
+    <string name="me_password">Change Password</string>
+    <string name="me_property_property_hint">Proper Name</string>
+    <string name="me_property_unit_hint">Unit NO.</string>
+    <string name="me_password_old_hint">Old Password</string>
+    <string name="me_password_password_hint">New Password</string>
+    <string name="me_password_repeat_hint">Repeat New Password</string>
+    <string name="me_property_relation_hint">Relation</string>
+    <string name="me_property_phone_hint">Contact NO.</string>
+    <string name="add">Add</string>
+    <string name="confirm">Confirm</string>
+    <string name="update">Update</string>
+    <string name="me_update_photo">Edit Prifile Picture</string>
+    <string name="me_property_verification_hint">Verification Code</string>
+    <string name="me_update_name">Name</string>
+    <string name="me_update_name_hint">Your Name</string>
+    <string name="me_update_phone">Contact NO.</string>
+    <string name="me_update_phone_hint">Your NO.</string>
+    <string name="me_update_email">Email</string>
+    <string name="me_update_email_hint">Your Email</string>
+    <string name="me_update_birthday">Birthday</string>
+    <string name="me_update_birthday_hint">Your Birthday</string>
+    <string name="me_update_update">Update</string>
+    <string name="me_bal">Bal:S$%1$f</string>
+
+    <!-- My Booking -->
+    <string name="booking_title">My Booking</string>
+    <string name="booking_history">History Booking</string>
+    <string name="booking_current">Current Booking</string>
+
+    <!-- 下拉刷新 -->
+    <string name="poll_refresh_down_refreshing">Loading</string>
+    <string name="poll_refresh_down_release">release to connect</string>
+    <string name="poll_refresh_down_loadmore">Load More</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+    <string name="saturday">SAT</string>
+    <string name="sunday">SUN</string>
+    <string name="str_network_timeout_msg">No network connection</string>
+    <string name="email_is_null">Mailbox cannot be empty!</string>
+    <string name="name_is_null">User name can not be empty!</string>
+    <string name="phone_is_null">Cell phone can not be empty!</string>
+    <string name="email_format_wrong">Mailbox format is not correct!</string>
+    <string name="password_is_null">Please enter a password!</string>
+    <string name="comment_is_null">Please enter a comment!</string>
+    <string name="new_password_is_null">Please enter a new password!</string>
+    <string name="new_password_repeat_is_null">Please enter your new password again!</string>
+    <string name="password_different">Two times the password is not consistent!</string>
+    <string name="old_new_same">The new password and the old password cannot be the same!</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="55dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="55dip"
+        android:paddingStart="15dip" >
+
+        <com.xflyme.go4.view.CircleImageView
+            android:id="@+id/iv_item_feedback"
+            android:layout_width="38dip"
+            android:layout_height="38dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/item_feed_head_back" />
+
+        <TextView
+            android:id="@+id/tv_item_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginStart="5dip"
+            android:layout_marginTop="3dip"
+            android:layout_toEndOf="@+id/iv_item_feedback"
+            android:layout_toRightOf="@+id/iv_item_feedback"
+            android:background="@drawable/item_feedback_gray"
+            android:text="TextView"
+            android:textColor="#696867"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

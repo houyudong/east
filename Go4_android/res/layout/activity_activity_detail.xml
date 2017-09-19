@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="100" >
+
+        <TextView
+            android:id="@+id/tv_activity_detail_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="89dp"
+            android:text="@string/detail_fail"
+            android:visibility="gone" />
+
+        <com.xflyme.go4.view.NoAutoScrollView
+            android:id="@+id/sc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip" >
+
+                <TextView
+                    android:id="@+id/tv_activitydetail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:text="The Florida"
+                    android:textColor="#555656"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:paddingBottom="10dip" >
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="17dip"
+                        android:layout_height="17dip"
+                        android:contentDescription="@null"
+                        android:src="@drawable/bg_team_clock" />
+
+                    <TextView
+                        android:id="@+id/tv_activitydetail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginStart="5dip"
+                        android:text="9am-6pm"
+                        android:textColor="#726d75" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/bg_item_noticeboard_check" />
+
+                    <TextView
+                        android:id="@+id/tv_activitydetail_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="300"
+                        android:textColor="#726d75" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/bg_item_reply" />
+
+                    <TextView
+                        android:id="@+id/tv_activitydetail_reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="300"
+                        android:textColor="#726d75" />
+
+                    <ImageView
+                        android:id="@+id/iv_activitydetail_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:onClick="onClick"
+                        android:src="@drawable/bg_item_love" />
+
+                    <TextView
+                        android:id="@+id/tv_activitydetail_love"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="300"
+                        android:textColor="#726d75" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_activitydetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_about_pic" />
+
+                <TextView
+                    android:id="@+id/tv_activitydetail_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:text="TextView"
+                    android:textColor="#7b797a"
+                    android:textSize="12sp" />
+
+                <com.xflyme.go4.view.NoSlideListView
+                    android:id="@+id/lv_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dip"
+                    android:listSelector="@color/transparent" />
+
+                <TextView
+                    android:id="@+id/btn_activitydetail_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:text="View more comments"
+                    android:textColor="#7b797a"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.xflyme.go4.view.NoAutoScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/main_color"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:hint="@string/comments_hint"
+            android:imeOptions="actionSend"
+            android:maxHeight="250dip"
+            android:maxLength="500"
+            android:minHeight="60dip"
+            android:padding="8dip"
+            android:textColor="#696867"
+            android:textColorHint="#a2a2a2" />
+
+        <RelativeLayout
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/send_bg"
+                android:onClick="onClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

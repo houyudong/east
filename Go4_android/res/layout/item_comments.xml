@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#c49a6c" />
+
+        <com.xflyme.go4.view.CircleImageView
+            android:id="@+id/iv_item_comments_photo"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_comments_photo"
+            android:layout_marginEnd="10dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/iv_item_comments_photo"
+            android:layout_toLeftOf="@+id/iv_heart"
+            android:layout_toRightOf="@+id/iv_item_comments_photo"
+            android:layout_toStartOf="@+id/iv_heart"
+            android:text="TextView"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_alignStart="@+id/tv_name"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginEnd="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/iv_heart"
+            android:layout_toStartOf="@+id/iv_heart"
+            android:paddingBottom="10dip"
+            android:text="TextView"
+            android:textColor="#666666" />
+
+        <ImageView
+            android:id="@+id/iv_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_name"
+            android:src="@drawable/bg_item_love" />
+    </RelativeLayout>
+
+</LinearLayout>

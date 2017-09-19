@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="89dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="89dip"
+        android:orientation="vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="#d9d7d8"
+            android:layout_alignParentBottom="true" />
+
+        <com.xflyme.go4.view.CircleImageView
+            android:id="@+id/iv_item_team_photo"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="10dip"
+            android:layout_height="10dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dip"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/tv_item_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/view1"
+            android:layout_toLeftOf="@id/iv_item_team_photo"
+            android:layout_toStartOf="@id/iv_item_team_photo"
+            android:layout_marginRight="10dip"
+            android:layout_marginEnd="10dip"
+            android:layout_toRightOf="@+id/view1"
+            android:singleLine="true"
+            android:text="Michael-Account"
+            android:textColor="#5c5c5c"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="17dip"
+            android:layout_height="17dip"
+            android:layout_alignLeft="@+id/tv_item_team_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tv_item_team_name"
+            android:layout_marginBottom="22dip"
+            android:contentDescription="@null"
+            android:src="@drawable/contact_time" />
+
+        <TextView
+            android:id="@+id/tv_item_team_worktime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginStart="10dip"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="9am-6pm"
+            android:textColor="#726d75" />
+    </RelativeLayout>
+
+</LinearLayout>

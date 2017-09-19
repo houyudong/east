@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="main_grid_total_height">261dip</dimen>
+    <dimen name="main_grid_space">15dip</dimen>
+    <dimen name="main_grid_height">108dip</dimen>
+    <dimen name="main_width">384dip</dimen>
+
+    <dimen name="item_listpicker_margin">10dip</dimen>
+    <dimen name="item_listpicker_imageview_margin">15dip</dimen>
+    <dimen name="item_listpicker_textview_padding">50dip</dimen>
+    <dimen name="item_listpicker_imageview_height">40dip</dimen>
+    <dimen name="item_listpicker_textview_height">45dip</dimen>
+</resources>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/me_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/me_title"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_name" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_name_hint"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView1"
+                android:layout_toRightOf="@+id/imageView1"
+                android:text="@string/book_confirm_name"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_property" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_property"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_property_hint"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_property"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView5"
+                android:layout_toRightOf="@+id/imageView5"
+                android:text="@string/book_confirm_property"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_unit" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_unit_hint"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:text="@string/book_confirm_unit"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_facilities" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_facility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_facility_hint"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_facility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="@string/book_confirm_facility"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_date" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_date_hint"
+                android:inputType="datetime"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_toRightOf="@+id/imageView4"
+                android:text="@string/book_confirm_date"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_time" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_time_hint"
+                android:inputType="datetime"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView6"
+                android:layout_toRightOf="@+id/imageView6"
+                android:text="@string/book_confirm_time"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_fee" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_fee_hint"
+                android:inputType="datetime"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:layout_toRightOf="@+id/imageView7"
+                android:text="@string/book_confirm_fee"
+                android:textColor="#606060" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/selector_book_confirm" >
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/book_phone" />
+
+            <EditText
+                android:id="@+id/et_book_confirm_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="end"
+                android:hint="@string/book_confirm_contact_hint"
+                android:inputType="datetime"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_book_confirm_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView8"
+                android:layout_toRightOf="@+id/imageView8"
+                android:text="@string/book_confirm_contact"
+                android:textColor="#606060" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_book_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/main_color" >
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dip"
+            android:layout_marginRight="15dip"
+            android:onClick="onClick"
+            android:background="@drawable/selector_book_confirm"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/book_confirm"
+            android:textColor="@color/confirm_text_color" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/btn_confirm"
+            android:layout_toStartOf="@+id/btn_confirm"
+            android:text="Total:S$100"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

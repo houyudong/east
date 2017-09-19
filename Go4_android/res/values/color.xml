@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="gray">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="main_color">#c49a6c</color>
+    <color name="main_grid_color">#605441</color>
+    <color name="dark">#605441</color>
+    <color name="main_tab_normal">#5c5c5c</color>
+    <color name="translucent">#99ffffff</color>
+    <color name="btn_skip">#60c5bb</color>
+    <color name="btn_color">#605441</color>
+    <color name="btn_pressed">#c59a69</color>
+    <color name="sport_word_color">#69A2D5</color>
+    <color name="hour_not_enable">#737070</color>
+    <color name="popup_line">#545454</color>
+
+</resources>

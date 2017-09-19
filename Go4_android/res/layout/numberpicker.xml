@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#a2a2a2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/numberpicker_cancle"
+            android:layout_width="50dip"
+            android:layout_height="35dip"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/textview_selector"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/numberpicker_title"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#868b87"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/numberpicker_done"
+            android:layout_width="50dip"
+            android:layout_height="35dip"
+            android:background="@null"
+            android:text="完成"
+            android:textColor="@color/textview_selector"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@color/gray" />
+
+    <com.xflyme.go4.view.WheelView
+        android:id="@+id/numberpicker_wheelview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+    </com.xflyme.go4.view.WheelView>
+
+</LinearLayout>
